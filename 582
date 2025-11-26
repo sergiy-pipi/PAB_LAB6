@@ -1,0 +1,4 @@
+list1 = set(map(int, input().split()))
+list2 = set(map(int, input().split()))
+common = list1 & list2
+print(len(common))
