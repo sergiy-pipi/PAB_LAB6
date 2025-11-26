@@ -1,0 +1,12 @@
+countries = {
+    "Ukraine": "Kyiv",
+    "France": "Paris",
+    "Denmark": "Copenhagen",
+    "China": "Beijing",
+    "Canada": "Ottawa"
+}
+
+# Сортування за значеннями (столицями)
+sorted_items = sorted(countries.items(), key=lambda x: x[1])
+
+print(sorted_items)
