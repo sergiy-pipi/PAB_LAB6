@@ -1,0 +1,13 @@
+nums = list(map(int, input().split()))
+repeats = set()
+seen = set()
+
+for n in nums:
+    if n in seen:
+        repeats.add(n)
+    else:
+        seen.add(n)
+
+# виведення (порядок довільний)
+for x in repeats:
+    print(x, end=" ")
