@@ -1,0 +1,19 @@
+mountains = {
+    "Hoverla": 2061,
+    "Pip Ivan Chernogirsky (Chorna gora)": 2028,
+    "Brebenescul": 2032,
+    "Petros": 2020,
+    "Hutyn Tomnatyk": 2016,
+    "Rebra": 2001,
+    "Turkul": 1933,
+    "Pozhyzhevska": 1822,
+    "Shpytsi": 1863,
+    "Malyi Pip Ivan": 1942
+}
+
+# Сортуємо за висотою за спаданням
+top3 = sorted(mountains.items(), key=lambda x: x[1], reverse=True)[:3]
+
+# Виведення результату
+for name, height in top3:
+    print(f"{name}: {height} m")
